@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: url(photo2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        .left {
+
+            display: inline-block;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 15%;
+
+        }
+
+        .left img {
+
+            width: 200px;
+        }
+
+        .left div {
+            font-size: 22px;
+            font-style: italic;
+            font-weight: bolder;
+            color: rgb(201, 152, 152);
+            text-align: center;
+        }
+
+        .middle {
+
+            display: block;
+            width: 35%;
+            margin: 15px auto;
+
+        }
+
+        .right {
+
+            position: absolute;
+            display: inline-block;
+            top: 3px;
+            right: 15px;
+            width: 15%;
+
+
+
+
+        }
+
+        .navbar {
+            display: flex;
+            padding 2px 2px;
+            color: white;
+        }
+
+        li {
+            list-style: none;
+            padding: 2px 2px;
+            font-size: 20px;
+
+
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            padding: 2px 8px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a:active {
+            text-decoration: underline;
+            color: chocolate;
+            background-color: yellow;
+        }
+
+        .search input {
+            width: 200px;
+            height: 30px;
+            margin: 2px 8px 0px 0px;
+            border-radius: 15px;
+            border: 1px solid black;
+            background-color: rgb(206, 123, 15);
+            opacity: .5;
+            font-size: 13px;
+            font-weight: bold;
+
+        }
+
+        .search input:hover {
+            background-color: rgb(42, 165, 52);
+        }
+
+        .gain {
+            color: white;
+            font-size: 35px;
+            line-height: 1.4;
+            letter-spacing: 5px;
+            position: absolute;
+            right: 454px;
+            bottom: 431px;
+            border: 1px solid gray;
+        }
+
+        .gain:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+            color: white;
+            margin-top: 200px;
+            box-shadow: 5px 5px 5px 2px;
+
+        }
+
+        .loss {
+            color: white;
+            font-size: 35px;
+            line-height: 1.4;
+            letter-spacing: 5px;
+            position: absolute;
+            right: 754px;
+            bottom: 431px;
+            border: 1px solid gray;
+        }
+
+        .loss:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+            color: white;
+            margin-top: 200px;
+            box-shadow: 5px 5px 5px 2px;
+        }
+
+        .slider {
+            width: 47%;
+            height: 350px;
+            position: absolute;
+            left: 328px;
+            top: 215px;
+            background-image: url(photo6.jpg);
+            background-repeat: no-repeat;
+            box-shadow: 6px 6px 5px 3px rgba(210, 228, 205, 0.836);
+            animation: slider 6s linear infinite;
+        }
+
+        @keyframes slider {
+            0% {
+                background-image: url(photo6.jpg);
+                background-size: cover;
+
+
+            }
+
+            35% {
+                background-image: url(photo7.jpg);
+                background-size: cover;
+
+            }
+
+            70% {
+                background-image: url(photo8.jpg);
+                background-size: cover;
+
+            }
+        }
+
+        .marque {
+            font-size: 45px;
+            font-weight: bolder;
+            color: white;
+            position: absolute;
+            top: 555px;
+        }
+
+        /* .boy {
+            background-image: url(photo3.jpg);
+            height: 392px;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: -148px;
+            top: 166px;
+            width: 476px;
+        }
+        .boy p{
+            font-size: 12px;
+            font-style: italic;
+            color: aqua;
+            
+        } */
+        H4.PLAYERS{
+            font: bold;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="photo5.jpg" alt="">
+            <div>Subrata Fitness </div>
+        </div> <!--left logo for box-->
+        <div class="middle">
+            <ul class="navbar">
+                <li> <a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">fitnesscalculator</a></li>
+                <li><a href="#">contact</a></li>
+
+
+            </ul>
+        </div><!--middle logo for nav-->
+        <div class="right">
+            <div class="search">
+                <input type="text" placeholder="search name here">
+            </div>
+        </div><!--right logo for search-->
+    </header>
+    <h1 class="gain"><a href="https://WWW.BOOKMYSHOW.COM">Weight Gain </a> </h1>! !<h1 class="loss"><a href="#"> Weight Loss</a></h1>
+    <div class="slider">
+
+    </div>
+    <div class="marque">
+        <marquee behavior="scroll" direction="left"> “Success usually comes to those who are too busy to be looking for
+            it.”</marquee>
+    </div>
+    <!-- <div class="boy"><p> “If you don’t make time for exercise, you’ll probably have to make time for illness.”</p></div>
+    <div class="girl"></div> -->
+    <h4 class="players"> PLAYERS</h4>
+</body>
+
+</html>
